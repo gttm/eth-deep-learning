@@ -1,0 +1,17 @@
+{
+	"dataFolder" : "../data/gaussian/",
+	"maskDataAfterSort" : [10000, 100000, 100000],
+	"outputFolder" : "../output/",
+	"sortingCriterion" : "psd_max",
+	"agentSorting": "False",
+	"agentShuffleSeed": "1",
+	"experiment" : "gaussian_full",
+	"i-epos" :{
+	    "numIterations" : 20,
+	    "childrenPerNode" : 2,
+	    "seed" : 0,
+	    "lambda" : 0,
+	    "globalCost" : "variance",
+	    "algorithm" : "i-epos"
+	}
+}

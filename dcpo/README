@@ -1,0 +1,18 @@
+# Datasets
+Disclaimer: For licensing reasons we cannot distribute the PNW real world datasets used for the report experiments (signed NDA).
+The config file is preset to use the gaussian synthetic dataset.
+
+# Prerequisites
+Before running any of the following commands make sure that:
+1. The dataset folders are placed inside the data folder.
+2. Change the "dataFolder", "maskDataAfterSort" and "experiment" options in code/config to correspond to the current experiment.
+3. The initial working directory must be the dcpo.
+4. The PYTHONPATH environment variable must be set to the dcpo/code directory.
+
+# Running the models
+1. DCPO: DQN
+cd code/reinforced_epos
+python dcpo_dqn.py --suffix gaussian_full
+2. DCPO: A3C-DNN
+cd code/reinforced_epos/helpers/oop
+python a3c_main.py
